@@ -1,0 +1,292 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.moving-star1 {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: 2rem;
+    animation-iteration-count: infinite;
+    animation-name: moving11;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    transform: rotate(-10deg);
+}
+
+.moving-star11 {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: 2rem;
+    animation-iteration-count: infinite;
+    animation-name: moving1;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    transform: rotate(-10deg);
+}
+
+.moving-star2 {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 5rem;
+    animation-iteration-count: infinite;
+    animation-name: moving2;
+    animation-duration: 25s;
+}
+
+@keyframes moving1 {
+    0% {
+        top: -50%;
+        left: -30%;
+    }
+    100% {
+        top: 200%;
+        left: 230%;
+    }
+}
+
+@keyframes moving11 {
+    0% {
+        top: -50%;
+        left: -50%;
+    }
+    100% {
+        top: 200%;
+        left: 200%;
+    }
+}
+
+@keyframes moving2 {
+    0% {
+        top: -20%;
+        right: -20%;
+    }
+    100% {
+        top: 200%;
+        right: 200%;
+    }
+}
+
+.sky {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 128), rgb(0, 77, 153), rgb(0, 143, 179));
+}
+
+.moon {
+    position: fixed;
+    height: 20%;
+    width: auto;
+    top: 12rem;
+    right: 10rem;
+}
+
+#audio {
+    z-index: 1;
+}
+
+.instr {
+    font-size:0.7rem;
+    position:fixed;
+    color: black;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.star {
+    position: absolute;
+    height: 0.2rem;
+    width: 0.2rem;
+    background-color: white;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.star::before {
+    content: "";
+    transform: rotate(-45deg);
+    position: absolute;
+    height: 0.2rem;
+    width: 0.2rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 5px;
+    }
+    .moon {
+        top: 25rem;
+        left: 7rem;
+        height: 17rem;
+    }
+    .moving-star1, .moving-star11 {
+        transform: rotate(-1deg);
+    }
+    .star {
+        height: 0.4rem;
+        width: 0.4rem;
+    }
+    .star::before {
+        height: 0.4rem;
+        width: 0.4rem;
+    }
+    .instr {
+        font-size:2rem;
+    }
+}
+
+.star1 {
+    top: 30rem;
+    left: 40rem;
+    animation-name: twinkle;
+    animation-duration: 0.8s;
+}
+
+.star2 {
+    top: 14rem;
+    left: 32rem;
+    animation-name: twinkle;
+    animation-duration: 0.85s;
+}
+
+.star3 {
+    top: 12rem;
+    left: 12rem;
+    animation-name: twinkle;
+    animation-duration: 0.91s;
+}
+
+.star4 {
+    top: 10rem;
+    left: 40rem;
+    animation-name: twinkle;
+    animation-duration: 1s;
+}
+
+.star5 {
+    top: 3rem;
+    left: 21rem;
+    animation-name: twinkle;
+    animation-duration: 1s;
+}
+
+.star6 {
+    top: 9rem;
+    left: 67rem;
+    animation-name: twinkle;
+    animation-duration: 0.78s;
+}
+
+.star7 {
+    top: 19rem;
+    left: 54rem;
+    animation-name: twinkle;
+    animation-duration: 0.98s;
+}
+
+.star8 {
+    top: 27rem;
+    left: 33rem;
+    animation-name: twinkle;
+    animation-duration: 0.9s;
+}
+
+.star9 {
+    top: 43rem;
+    left: 71rem;
+    animation-name: twinkle;
+    animation-duration: 0.7s;
+}
+
+.star10 {
+    top: 22rem;
+    left: 55rem;
+    animation-name: twinkle;
+    animation-duration: 0.75s;
+}
+
+.star11 {
+    top: 3rem;
+    left: 54rem;
+    animation-name: twinkle;
+    animation-duration: 0.76s;
+}
+
+.star12 {
+    top: 35rem;
+    left: 60rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star13 {
+    top: 5rem;
+    left: 60rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star14 {
+    bottom: 5rem;
+    right: 60rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star15 {
+    bottom: 10rem;
+    right: 20rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star16 {
+    bottom: 12rem;
+    right: 5rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star17 {
+    bottom: 35rem;
+    right: 60rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+.star18 {
+    bottom: 24rem;
+    right: 34rem;
+    animation-name: twinkle;
+    animation-duration: 0.83s;
+}
+
+@keyframes twinkle {
+    0% {
+        transform: scale(0.7);
+        background-color: yellow;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: blue;
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.6);
+        background-color: red;
+    }
+}

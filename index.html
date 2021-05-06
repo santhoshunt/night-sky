@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+
+<body id="body-id">
+    <audio controls volume="0.1" loop id="night">
+        <source src="night.mp3" type="audio/mpeg">
+    </audio>
+    <div class="sky"></div>
+    <img src="moon.png" alt="moon" class="moon">
+    <div class="star star1"></div>
+    <div class="star star2"></div>
+    <div class="star star3"></div>
+    <div class="star star4"></div>
+    <div class="star star5"></div>
+    <div class="star star6"></div>
+    <div class="star star7"></div>
+    <div class="star star8"></div>
+    <div class="star star9"></div>
+    <div class="star star10"></div>
+    <div class="star star11"></div>
+    <div class="star star12"></div>
+    <div class="star star13"></div>
+    <div class="star star14"></div>
+    <div class="star star15"></div>
+    <div class="star star16"></div>
+    <div class="star star17"></div>
+    <div class="star star18"></div>
+    <img src="star.png" alt="star" class="moving-star1">
+    <img src="star.png" alt="star" class="moving-star11">
+    <img src="star1.png" alt="star" class="moving-star2">
+    <p class="instr">Click anywhere on the screen <br>to play / Pause the audio</p>
+    <script>
+        document.getElementById("body-id").addEventListener("click", function () {
+            const song = document.getElementById('night');
+            console.log("clicked");
+            if (song.paused) {
+                song.play();
+            }
+            else {
+                song.pause();
+            }
+        });
+    </script>
+</body>
+
+
+</html>
